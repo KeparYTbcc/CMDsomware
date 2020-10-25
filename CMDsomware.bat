@@ -227,6 +227,6 @@ echo its not good idea to restart you pc
 ping localhost -n 2 > nul
 echo shutdown -s
 echo oopsy
-ping localhost -n 4 > nul
-shutdown -r
+ping localhost -n 8 > nul
+powershell wininit
 
